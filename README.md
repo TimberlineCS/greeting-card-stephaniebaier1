@@ -32,3 +32,46 @@ document.body.appendChild(au);
 
 - [ ] Before you submit your project, grade your project against the criteria below. 
 	[Rubric.md](Rubric.md)
+
+# Project 2: Happy Holidays Greeting Card
+
+* Author: Stephanie Baier
+* Class: AP Computer Science Principles Period 1
+* Year: 2023
+
+## Overview
+
+My program creates a "Happy Holidays" card that shows a winter scene.  It includes animation and playable music.
+
+## Compiling and Using
+
+To open the card, double click on index.html and click "reveal in file explorer" to see it in your browser.  Once opened, press the play button (bottom left of the card) to play the music.
+
+## Discussion
+
+Discuss the issues and successes you encountered during programming
+(development). Here are some questions to get you started. You don't
+have to answer all of them in order - they are a guideline to get you
+thinking.
+  * I had probelms with creating an even border around the dark blue background (however, I figured this out).  The creation of the triangles for the Christmas tree went well.
+  * I had to edit elements, save the file, and check if the elements were properly placed on the screen.
+  * I had to research on my own how to download an mp3 file to upload it.  I also researched how to add a fancy font.
+  * Most of my errors came from misspelling variables.  Or, I forgot to append a variable I had created.  I double checked spelling and made sure to append variables.
+  * Making the background and adding an audio file.
+  * Something that clicked was how to change how an image or element was positioned by using style.top and style.left
+  * I would not change anything about the project.
+  * Knowing how to change element position and add audio will be helpful for the future.
+
+## Testing
+
+In this section, tell us how you tested your project.
+
+I inspected the file on the browser and did not come back with any errors.  I played the audio in the browser to make sure it worked.  I checked that all elements appeared in the browser.
+
+## Extra Credit
+
+I added a special font from a list of Javascript compatible fonts I researched. I added 7 images/animations (moon, deer, 4 lights, snowy hill), 7 colors, and 16 elements.
+
+## Sources used
+
+I used this website to find the font I used:https://www.fonts.com/font/itc 
