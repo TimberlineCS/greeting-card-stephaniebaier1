@@ -1,50 +1,29 @@
-//Your name
-//Period
-//Date
-
-/*Provide a description about what this program does here*/
-
-/*Write code to create and manipulate the elements on the index.html page.  
-The elements must come to gether to resemble an image.  Your Greeting Card
-must also include text, an image, and music. */
 //Stephanie Baier
 //Period 1
 //12/11/2023
 
-/*Provide a description about what this program does here*/
-
-/*Write code to create and manipulate the elements on the index.html page.  
-The elements must come to gether to resemble an image.  Your Greeting Card
-must also include text, an image, and music. */
+//My program creates a "Happy Holidays" card that shows a winter scene with animation and music.
 
 //this is the sky 
 var sky = document.createElement("div")
 document.body.append(sky)
-sky.style.backgroundColor = "#ccdae3";
+sky.style.backgroundColor = "#051220"
 sky.style.width = "1490px"; 
 sky.style.height = "705px"; 
-//sky.style.padding = "4em"; 
 sky.style.borderWidth = "0em"; 
 sky.style.borderStyle = "dotted"; 
-sky.style.borderColor = "blue";
+sky.style.borderColor = "#0195fe";
 sky.style.borderRadius = "0%"; 
 sky.style.margin = "1em"; 
 
-//this is the snowy ground
-var snowy = document.createElement("div");
-document.body.append(snowy)
-snowy.style.backgroundColor = "white";
-snowy.style.width = "1510px";
-snowy.style.height = "150px";
-//snowy.style.padding = "2em";
-//snowy.style.borderWidth = "2em";
-//snowy.style.borderStyle = "dotted";
-//snowy.style.borderColor = "blue";
-//snowy.style.borderRadius = "20%";
-//snowy.style.margin = "2em";
-snowy.style.position = "absolute"
-snowy.style.top = "571px"
-snowy.style.left = "10px"
+//this is the snowy hill in the background
+var hill= document.createElement("img")
+hill.src = "https://www.clipartmax.com/png/full/216-2161856_snowy-ground-with-trees-png-clipart-image-snowy-hill-clipart-png.png"
+hill.setAttribute("width", "1500px")
+hill.style.position = "absolute"
+hill.style.top = "185px"
+hill.style.left = "20px"
+document.body.append(hill)
 
 //this is the edging of the card
 var edging = document.createElement("div")
@@ -52,7 +31,6 @@ document.body.append(edging)
 edging.style.backgroundColor = "transparent";
 edging.style.width = "1470px";
 edging.style.height = "679px";
-//edging.style.padding = "2em";
 edging.style.borderWidth = "0.5em";
 edging.style.borderStyle = "dotted";
 edging.style.borderColor = "blue";
@@ -68,20 +46,14 @@ document.body.append(trunk)
 trunk.style.backgroundColor = "#6c3f3a";
 trunk.style.width = "70px";
 trunk.style.height = "60px";
-//trunk.style.padding = "2em";
-//trunk.style.borderWidth = "2em";
-//trunk.style.borderStyle = "dotted";
-//trunk.style.borderColor = "blue";
 trunk.style.borderRadius = "30%";
 trunk.style.margin = "1em";
 trunk.style.position = "absolute"
 trunk.style.top = "585px"
 trunk.style.left = "740px"
 
+
 //these triangles make the tree
-//base triangle is triangle0
-//top triangle is triangle5
-//tree color = 3d4f1a
 var triangle0 = document.createElement("div");
 triangle0.style.border = "#3d4f1a solid 150px";
 triangle0.style.width = "1px";
@@ -123,7 +95,6 @@ document.body.append(triangle02);
 triangle02.style.position = "absolute"
 triangle02.style.top = "317px"
 triangle02.style.left = "510px"
-
 
 var triangle1 = document.createElement("div");
 triangle1.style.border = "#3d4f1a solid 150px";
@@ -207,8 +178,9 @@ ornament.style.borderColor = "#c43c3a";
 ornament.style.borderRadius = "100%";
 ornament.style.margin = "1em";
 ornament.style.position = "absolute"
-ornament.style.top = "525px"
-ornament.style.left = "725px"
+ornament.style.top = "545px"
+ornament.style.left = "735px"
+
 
 var ornament2 = document.createElement("div")
 document.body.append(ornament2)
@@ -221,8 +193,9 @@ ornament2.style.borderColor = "#c43c3a";
 ornament2.style.borderRadius = "100%";
 ornament2.style.margin = "1em";
 ornament2.style.position = "absolute"
-ornament2.style.top = "480px"
-ornament2.style.left = "850px"
+ornament2.style.top = "440px"
+ornament2.style.left = "840px"
+
 
 var ornament3 = document.createElement("div")
 document.body.append(ornament3)
@@ -235,9 +208,82 @@ ornament3.style.borderColor = "#c43c3a";
 ornament3.style.borderRadius = "100%";
 ornament3.style.margin = "1em";
 ornament3.style.position = "absolute"
-ornament3.style.top = "315px"
+ornament3.style.top = "355px"
 ornament3.style.left = "710px"
 
+//this is the text that says Happy Holidays
+var div1 = document.createElement("div")
+div1.style.backgroundColor = "transparent";
+div1.style.width = "600px";
+div1.style.height = "80px";
+div1.style.borderWidth = ".2em";
+div1.style.borderStyle = "dashed";
+div1.style.borderColor = "transparent";
+div1.style.borderRadius = "0%";
+div1.style.margin = "1em";
+div1.style.position = "absolute"
+div1.style.top = "-70px"
+div1.style.left = "380px"
+div1.innerHTML = "Happy Holidays"
+div1.style.textAlign = "center"
+div1.style.fontSize = "5em"
+div1.style.color = "white"
+div1.style.fontFamily = "Blackadder ITC"
+document.body.append(div1)
+
+
+//this inserts an image of a moon
+var moon = document.createElement("img")
+moon.src = "https://upload.wikimedia.org/wikipedia/commons/1/1a/Moon_rotating_full_220px.gif"
+moon.setAttribute("width", "90px")
+moon.style.position = "absolute"
+moon.style.top = "70px"
+moon.style.left = "100px"
+document.body.append(moon)
+
+//inserts lights images to makes the tree's lights
+var lights = document.createElement("img")
+lights.src = "https://gifs.eco.br/wp-content/uploads/2022/07/gifs-de-pisca-pisca-de-natal-1.gif"
+lights.setAttribute("width", "161px")
+lights.style.position = "absolute"
+lights.style.top = "445px"
+lights.style.left = "600px"
+document.body.append(lights)
+
+var lights2 = document.createElement("img")
+lights2.src = "https://gifs.eco.br/wp-content/uploads/2022/07/gifs-de-pisca-pisca-de-natal-1.gif"
+lights2.setAttribute("width", "163px")
+lights2.style.position = "absolute"
+lights2.style.top = "295px"
+lights2.style.left = "730px"
+document.body.append(lights2)
+
+var lights3 = document.createElement("img")
+lights3.src = "https://gifs.eco.br/wp-content/uploads/2022/07/gifs-de-pisca-pisca-de-natal-1.gif"
+lights3.setAttribute("width", "161px")
+lights3.style.position = "absolute"
+lights3.style.top = "445px"
+lights3.style.left = "805px"
+document.body.append(lights3)
+
+var lights4 = document.createElement("img")
+lights4.src = "https://gifs.eco.br/wp-content/uploads/2022/07/gifs-de-pisca-pisca-de-natal-1.gif"
+lights4.setAttribute("width", "161px")
+lights4.style.position = "absolute"
+lights4.style.top = "175px"
+lights4.style.left = "667px"
+document.body.append(lights4)
+
+//makes the deer
+var animal = document.createElement("img")
+animal.src = "https://media1.giphy.com/media/PM0dtv2jhXEtJZ1D2M/giphy.gif?cid=6c09b952no9pnqn6j4zzqqb5difnfqd7489ms1b3iwbkr88y&ep=v1_stickers_related&rid=giphy.gif&ct=s"
+animal.setAttribute("width", "400px")
+animal.style.position = "absolute"
+animal.style.top = "275px"
+animal.style.left = "1000px"
+document.body.append(animal)
+
+//makes the deer's ornament
 var ornament4 = document.createElement("div")
 document.body.append(ornament4)
 ornament4.style.backgroundColor = "#901819";
@@ -249,78 +295,13 @@ ornament4.style.borderColor = "#c43c3a";
 ornament4.style.borderRadius = "100%";
 ornament4.style.margin = "1em";
 ornament4.style.position = "absolute"
-ornament4.style.top = "545px"
-ornament4.style.left = "950px"
+ornament4.style.top = "610px"
+ornament4.style.left = "1105px"
 
-var ornament5 = document.createElement("div")
-document.body.append(ornament5)
-ornament5.style.backgroundColor = "#901819";
-ornament5.style.width = "20px";
-ornament5.style.height = "20px";
-ornament5.style.borderWidth = ".2em";
-ornament5.style.borderStyle = "dashed";
-ornament5.style.borderColor = "#c43c3a";
-ornament5.style.borderRadius = "100%";
-ornament5.style.margin = "1em";
-ornament5.style.position = "absolute"
-ornament5.style.top = "220px"
-ornament5.style.left = "770px"
-
-var ornament6 = document.createElement("div")
-document.body.append(ornament6)
-ornament6.style.backgroundColor = "#901819";
-ornament6.style.width = "20px";
-ornament6.style.height = "20px";
-ornament6.style.borderWidth = ".2em";
-ornament6.style.borderStyle = "dashed";
-ornament6.style.borderColor = "#c43c3a";
-ornament6.style.borderRadius = "100%";
-ornament6.style.margin = "1em";
-ornament6.style.position = "absolute"
-ornament6.style.top = "450px"
-ornament6.style.left = "650px"
-
-var ornament7 = document.createElement("div")
-document.body.append(ornament7)
-ornament7.style.backgroundColor = "#901819";
-ornament7.style.width = "20px";
-ornament7.style.height = "20px";
-ornament7.style.borderWidth = ".2em";
-ornament7.style.borderStyle = "dashed";
-ornament7.style.borderColor = "#c43c3a";
-ornament7.style.borderRadius = "100%";
-ornament7.style.margin = "1em";
-ornament7.style.position = "absolute"
-ornament7.style.top = "350px"
-ornament7.style.left = "850px"
-
-var ornament8 = document.createElement("div")
-document.body.append(ornament8)
-ornament8.style.backgroundColor = "#901819";
-ornament8.style.width = "20px";
-ornament8.style.height = "20px";
-ornament8.style.borderWidth = ".2em";
-ornament8.style.borderStyle = "dashed";
-ornament8.style.borderColor = "#c43c3a";
-ornament8.style.borderRadius = "100%";
-ornament8.style.margin = "1em";
-ornament8.style.position = "absolute"
-ornament8.style.top = "400px"
-ornament8.style.left = "750px"
-
-var ornament9 = document.createElement("div")
-document.body.append(ornament9)
-ornament9.style.backgroundColor = "#901819";
-ornament9.style.width = "20px";
-ornament9.style.height = "20px";
-ornament9.style.borderWidth = ".2em";
-ornament9.style.borderStyle = "dashed";
-ornament9.style.borderColor = "#c43c3a";
-ornament9.style.borderRadius = "100%";
-ornament9.style.margin = "1em";
-ornament9.style.position = "absolute"
-ornament9.style.top = "560px"
-ornament9.style.left = "600px"
-
-//this is the text that says Happy Holidays
-var div20 = document.createElement("div")
+//adds the audio
+var au = new Audio("Music/carolOfTheBells.mp3");
+au.controls = true;
+document.body.appendChild(au);
+au.style.top = "640px"
+au.style.left = "50px"
+au.style.position = "absolute"
